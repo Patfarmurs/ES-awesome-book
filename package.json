@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Patfarmurs/ES-awesome-book/issues"
   },
-  "homepage": "https://github.com/Patfarmurs/ES-awesome-book#readme"
+  "homepage": "https://github.com/Patfarmurs/ES-awesome-book#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
 }
