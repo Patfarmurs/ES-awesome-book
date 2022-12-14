@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75px;
+  box-shadow: 0 3px 5px rgba(51, 51, 51, 0.2);
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.brand-logo {
+  text-decoration: none;
+  color: #0a0c0f;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 15px;
+  display: block;
+}
+
+.nav-item-group {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-item {
+  background: #ddd;
+  padding: 7px 10px;
+  cursor: pointer;
+  border-radius: 1022px;
+  border-left: 111px;
+}
+
+.nav-item:hover {
+  background: #050708;
+  color: #fff;
+}
+
+.nav-item:active {
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.active {
+  background: #030405;
+  color: #fff;
+}
+
+.main-container {
+  min-height: 50vh;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-now {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#show-date {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #757575;
+}
+
+.books-section {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-name {
+  font-size: 2rem;
+  margin: 15px 0;
+  padding: 10px;
+}
+
+.books-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  border-top: 1px solid #dfd7d7;
+  min-height: 95px;
+  padding: 15px 0;
+  max-width: 800px;
+}
+
+.book-item {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-item:nth-child(even) {
+  background: #ddd;
+}
+
+.button-remove {
+  padding: 7px 10px;
+  border: 1px solid #f00;
+  background: #f00;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.button-remove:hover {
+  color: #f00;
+  background: #fff;
+}
+
+.button-remove:active {
+  background: #d3d3d3;
+}
+
+.put-book-section {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#put-book {
+  width: 100%;
+  max-width: 800px;
+  margin: 10px 0;
+  padding: 15px;
+  border-top: 1px solid #d3d3d3;
+}
+
+.put-book-field {
+  border: 0;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d3d3d3;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.button-submit {
+  width: fit-content;
+  padding: 15px 20px;
+  align-self: flex-end;
+  background: #020303;
+  border: 1px solid #06080a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.button-submit:hover {
+  background: #fff;
+  color: #070a0e;
+}
+
+.button-submit:active {
+  transform: translateY(2px);
+  background: #d3d3d3;
+}
+
+.error {
+  color: #f00;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.contact-section {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-details {
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.contact-item-group {
+  padding: 15px;
+}
+
+.contact-item {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.contact-item address {
+  display: inline;
+  font-style: normal;
+}
+
+.books-section,
+.put-book-section,
+.contact-section {
+  display: none;
+}
+
+.slide-in {
+  display: flex;
+  border: 1px solid #d3d3d3;
+  border-radius: 1px;
+  box-shadow: 0 3px 5px rgb(0, 0, 0, 0.1);
+  animation: popup 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(200%) rotate(180deg);
+  }
+
+  100% {
+    transform: translateX(0%) rotate(180deg);
+  }
+}
+
+.footer {
+  display: flex;
+  margin-top: 15px;
+  background: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer h5 {
+  color: #ddd;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .brand-logo {
+    padding: 0;
+  }
+}
