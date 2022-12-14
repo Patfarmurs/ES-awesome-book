@@ -39,6 +39,8 @@
 Awesome-Book
 
 > Describe your project in 1 or 2 sentences.
+This project is based on a library that provides  a set of features,
+where a user can add and remove a book from the library list.
 
 **[your_project__name]** is a...
 #awesome-book
