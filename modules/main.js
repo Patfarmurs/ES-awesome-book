@@ -1,8 +1,4 @@
-export default navItems.forEach((navItem) => {
-    navItem.addEventListener('click', (e) => {
-      navItems.forEach((n) => {
-        n.classList.remove('active');
-      });
-        addNavSection(e);
-    });
-});
+export const navItems = document.querySelectorAll('.nav-item');
+export const bookSection = document.querySelector('.books-section');
+export const addBookSection = document.querySelector('.put-book-section');
+export const contractSection = document.querySelector('.contact-section');

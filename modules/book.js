@@ -1,5 +1,4 @@
-const generateId = () =>
-  Date.now().toString(36) + Math.random().toString(36).substring(2);
+import generateId from './time.js';
 
 export default class Book {
   constructor(name, writer) {
